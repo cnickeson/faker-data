@@ -1,0 +1,15 @@
+{
+  "name": "faker-data",
+  "version": "1.0.0",
+  "description": "Convience method for creating massive amounts fake data",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "author": "Colin Nickeson",
+  "license": "ISC",
+  "devDependencies": {
+    "faker": "^4.1.0",
+    "jest": "^19.0.2"
+  }
+}
