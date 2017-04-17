@@ -8,9 +8,10 @@ npm install faker-data
 
 ### Usage
 
-See <a href=http://marak.github.io/faker.js/>Faker</a> for faker types
+See <a href=http://marak.github.io/faker.js/>Faker</a> for faker types.  
+
 Faker data takes in 3 parameters. 
-Props: Array of objects describing the output data 
+Props: Array of objects describing the output data  
   // [ { 
   //  name: 'propertyName', 
   //  type: Faker Type/Function //No type will default to (propertyName + index)
