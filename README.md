@@ -1,4 +1,4 @@
-# Faker Data - creating a massive array of fake data
+# Faker Data - creating a massive array of fake data using Faker.js
 
 ### Installation
 
@@ -8,14 +8,15 @@ npm install faker-data
 
 ### Usage
 
-Faker data takes in 3 parameters.  
-Props: Array of objects describing the output data  
-  // [ {  
-  //  name: 'propertyName',  
-  //  type: Faker Data/Function //No type will default to (propertyName + index)  
-  // }]  
-Count: Number of items to return  
-Localization: faker localization  
+See <a href=http://marak.github.io/faker.js/>Faker</a> for faker types
+Faker data takes in 3 parameters. 
+Props: Array of objects describing the output data 
+  // [ { 
+  //  name: 'propertyName', 
+  //  type: Faker Type/Function //No type will default to (propertyName + index)
+  // }]
+Count: Number of items to return
+Localization: faker localization
 
 ```
 const fakerData = require('faker-data');
