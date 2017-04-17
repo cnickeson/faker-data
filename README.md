@@ -10,14 +10,14 @@ npm install faker-data
 
 See <a href=http://marak.github.io/faker.js/>Faker</a> for faker types.  
 
-Faker data takes in 3 parameters. 
+Faker data takes in 3 parameters.  
 Props: Array of objects describing the output data  
-  // [ { 
-  //  name: 'propertyName', 
-  //  type: Faker Type/Function //No type will default to (propertyName + index)
-  // }]
-Count: Number of items to return
-Localization: faker localization
+  // [ {  
+  //  name: 'propertyName',  
+  //  type: Faker Type/Function //No type will default to (propertyName + index)  
+  // }]  
+Count: Number of items to return  
+Localization: faker localization  
 
 ```
 const fakerData = require('faker-data');
