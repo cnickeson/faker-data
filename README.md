@@ -6,7 +6,7 @@
 npm install faker-data
 ```
 
-###Usage
+### Usage
 
 Faker data takes in 3 parameters. 
 Props: Array of objects describing the output data 
@@ -50,10 +50,10 @@ const testFakerData = fakerData([
   }
 ], 2);
 
-console.log(testDefaultData);
+console.log(testFakerData);
 //outputs: [{ 'firstName': 'Rowan', 'lastName': 'Nikolaus', 'address': '967 Walsh Fields South Makenzietown,Iowa' },  { 'firstName': 'Bobby', 'lastName': 'Simonis', 'address': '7827 Armstrong Square Schroederhaven,Colorado' }]
 
-const testDefaultData = fakerData([
+const testCallbackData = fakerData([
   {
     name: 'firstName',
     type: (index, prop) => { return 'firstName' }
@@ -68,7 +68,7 @@ const testDefaultData = fakerData([
   }
 ], 2);
 
-console.log(testDefaultData);
+console.log(testCallbackData);
 //outputs: [{ 'firstName': 'firstName', 'lastName': 'lastName', 'address': 'address' },  { 'firstName': 'firstName', 'lastName': 'lastName', 'address': 'address' }]
 ```
 

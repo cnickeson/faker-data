@@ -29,3 +29,11 @@ test('creates fake data with faker', () => {
     { name: 'address', type: '{{address.streetAddress}} {{address.city}},{{address.state}}' }
   ], 2).length).toEqual(2);
 });
+
+test('creates fake data with faker localization', () => {
+  expect(fakerData([
+    { name: 'firstName', type: '{{name.firstName}}' },
+    { name: 'lastName', type: '{{name.lastName}}' },
+    { name: 'address', type: '{{address.streetAddress}} {{address.city}},{{address.state}}' }
+  ], 2, 'de').length).toEqual(2);
+});
