@@ -14,7 +14,8 @@ function generateFakeData(props, count, localization) {
   var resultArr = []
   for(var index = 0; index < count; index++) {
     var newObj = {};
-    for(var propIndex in props) {
+    for(var propIndex = 0; propIndex < props.length; propIndex++) {
+			var prop = props[propIndex];
       if(typeof(prop.type) === 'function') {
         newObj[prop.name] = prop.type(index, prop);
       }
