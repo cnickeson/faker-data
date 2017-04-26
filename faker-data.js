@@ -14,17 +14,17 @@ function generateFakeData(props, count, localization) {
   var resultArr = []
   for(var index = 0; index < count; index++) {
     var newObj = {};
-    props.forEach((prop) => {
+    for(var propIndex in props) {
       if(typeof(prop.type) === 'function') {
         newObj[prop.name] = prop.type(index, prop);
       }
       else if(prop.type !== undefined){
-        newObj[prop.name] = Faker.fake(`${prop.type}`);
+        newObj[prop.name] = Faker.fake(prop.type);
       }
       else {
-        newObj[prop.name] = `${prop.name}${index}`;
+        newObj[prop.name] = prop.name+index;
       };
-    });
+    };
     resultArr.push(newObj);
   }
   return resultArr;
