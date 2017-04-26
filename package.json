@@ -1,6 +1,6 @@
 {
   "name": "faker-data",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Convience method for creating massive amounts fake data",
   "main": "index.js",
   "scripts": {
